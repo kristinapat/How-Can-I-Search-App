@@ -12,6 +12,7 @@ struct How_Can_I_SearchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.colorScheme, .light)
         }
     }
 }
