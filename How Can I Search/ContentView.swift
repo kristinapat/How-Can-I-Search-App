@@ -120,7 +120,7 @@ struct StateSectionView: View {
             // Use larger state-level box only for Colleges and Universities
             if state == "Colleges and Universities" {
                 Text("Colleges & Universities")
-                    .font(.custom("Times New Roman", size: 38))
+                    .font(.custom("Times New Roman", size: 33))
                     .fontWeight(.bold)
                     .padding(8)
                     .frame(maxWidth: .infinity)
@@ -216,7 +216,7 @@ struct ContentView: View {
                 VStack(alignment: .center, spacing: 8) {
                
                     Text("How Can I Search")
-                        .font(.custom("Times New Roman", size: 60))
+                        .font(.custom("Times New Roman", size: 51))
                         .kerning(-5.5)
                         .fontWeight(.bold)
                         .foregroundColor(.black)
@@ -225,11 +225,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding(12) // ✅ Add padding inside the box
                     
-                        .background(theme.highlight)
                         .padding(.top, 4) // Optional: spacing from top
-                    
-                    .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.black, lineWidth: 6))
-                    .clipShape(RoundedRectangle(cornerRadius: 6))
                     
                     VStack(alignment: .center, spacing: 8) {
                                          
